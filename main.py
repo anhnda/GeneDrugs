@@ -15,7 +15,7 @@ def load_drugbank():
         drugName = parts[1]
         targetInfos = parts[2].split("$")
         # print(targetInfos)
-        for targetInfo in targetInfos:
+        for targetInfo in [targetInfos[0]]:
             if len(targetInfo) == 0:
                 continue
 
